@@ -1,0 +1,203 @@
+.promo {
+	min-height: 680px;
+	background: url('../images/bg/promo_bg.jpg') center center / cover no-repeat;
+	padding: 25px 0 82px 0;
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		margin-right: 25px;
+		width: 96px;
+		height: 100px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__navbar {
+		width: 600px;
+	}
+
+	&__list {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		li {
+			position: relative;
+			&:after {
+				content: '';
+				width: 1px;
+				height: 20px;
+				border-right: dotted;
+				border-width: 1.5px;
+				border-color: rgba(255, 255, 255, 0.36);
+				position: absolute;
+				top: 2px;
+				right: -15px;
+			}
+			&:last-child::after {
+				display: none;
+			}
+		}
+		a {
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 16.71px;
+			position: relative;
+			&:hover {
+				color: #ec644b;
+				&::before {
+					content: '';
+					width: 100%;
+					height: 1px;
+					background-color: #ec644b;
+					position: absolute;
+					bottom: -6px;
+					left: 0;
+				}
+			}
+		}
+	}
+	&__question {
+		margin-left: 20px;
+	}
+
+	&__question-text {
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 300;
+		text-align: right;
+	}
+	&__question-tel {
+		// Style for "+7 (926) 4"
+		color: #ffffff;
+		font-size: 19px;
+		font-weight: 700;
+		text-decoration: none;
+		&:hover {
+			color: #ec644b;
+		}
+	}
+
+	&__btn {
+		text-decoration: none;
+		color: #ffffff;
+		font-size: 12px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__suptitle {
+		margin-top: 9px;
+		font-size: 24px;
+		font-weight: 300;
+		text-align: center;
+		color: #fff;
+	}
+
+	&__title {
+		// Style for "ДОСТАВКА Г"
+		color: #ec644b;
+		font-family: 'Roboto Condensed';
+		font-size: 72px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__subtitle {
+		position: relative;
+		color: #ffffff;
+		font-family: 'Roboto Condensed';
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 20px;
+		&:after {
+			content: '';
+			width: 400px;
+			height: 1px;
+			position: absolute;
+			background-color: #fff;
+			display: block;
+			right: 13%;
+			bottom: -48px;
+		}
+		&::before {
+			content: '';
+			width: 10px;
+			height: 10px;
+			background-color: #fff;
+			position: absolute;
+			border-radius: 100%;
+			top: 67px;
+			left: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	.divider {
+		width: 400px;
+		height: 1px;
+		position: absolute;
+		background-color: #fff;
+		display: block;
+		left: 14%;
+		bottom: -48px;
+	}
+	&__benefits {
+		margin-top: 75px;
+		display: grid;
+		grid-template-columns: 260px 248px 258px 262px;
+		grid-template-rows: minmax(63px, auto) minmax(59px, auto);
+		column-gap: 38px;
+		row-gap: 5px;
+	}
+
+	&__item {
+	}
+
+	&__benefits-img {
+		img {
+			display: block;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+	}
+
+	&__benefits-text {
+		grid-row: 2/3;
+		text-align: center;
+		color: #ffffff;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 22px;
+	}
+
+	&__payment {
+		margin: 0 auto;
+		margin-top: 40px;
+		width: 231px;
+		a {
+			padding: 23px 45px;
+			height: 57px;
+			background-color: #ec644b;
+			border: none;
+			border-radius: 30px;
+			color: #ffffff;
+			font-size: 15px;
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	}
+}
