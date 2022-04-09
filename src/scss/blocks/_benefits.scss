@@ -1,0 +1,45 @@
+.benefits {
+	min-height: 590px;
+	padding: 58px 0 0 50px;
+	background-color: #f3f3f3;
+	&__title {
+		text-align: center;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 32px;
+	}
+
+	&__item {
+		display: flex;
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 35px;
+	}
+	&__item-descr {
+		width: 432px;
+	}
+	&__img {
+		width: 57px;
+		margin-right: 20px;
+		img {
+			max-width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__item-title {
+		margin-bottom: 5px;
+	}
+
+	&__text {
+		// Style for "Делаем опт"
+		color: #3a3a3a;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 22px;
+		text-align: left;
+	}
+}
